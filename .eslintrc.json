@@ -1,0 +1,32 @@
+{
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+      "browser": true,
+      "node": true
+  },
+  "plugins": [
+    "react",
+    "prettier"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "rules": {
+    "semi": "error",
+    "eqeqeq": ["error", "always"],
+    "no-console": ["error", { "allow": ["warn", "error"]}],
+    "react/prop-types": [ 0 ]
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
+}
